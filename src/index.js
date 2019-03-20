@@ -16,7 +16,6 @@ const render = () => {
     guessesEL.textContent = gameOne.statusMessage
 
     gameOne.puzzle.split('').forEach(letter => {
-        // puzzleEl.innerHTML += `<span>${letter}</span>`
         const letterEl = document.createElement('span')
         letterEl.textContent = letter
         puzzleEl.appendChild(letterEl)
